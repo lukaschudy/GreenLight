@@ -1,4 +1,4 @@
-# RepliCheck — Project Summary & Decision Log
+# Green Light — Project Summary & Decision Log
 
 This document captures the thinking behind the project so I can pick it up later without losing context. It is not for public consumption — it is a scratchpad.
 

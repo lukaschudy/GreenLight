@@ -1,4 +1,4 @@
-# RepliCheck
+# Green Light
 
 > An open-source tool that automatically verifies economics replication packages before journal submission.
 
@@ -6,12 +6,12 @@
 
 Submitting a replication package to an economics journal is painful. Researchers manually zip their code and data, fill in checklists, and submit — only to have a data editor come back weeks later with a list of things that don't run or don't comply with the journal's requirements. The process is slow, manual, and entirely avoidable.
 
-RepliCheck solves this by running your package automatically in a sandboxed environment and producing a compliance report before you submit.
+Green Light solves this by running your package automatically in a sandboxed environment and producing a compliance report before you submit.
 
 ## What it does
 
 1. You upload a zip file containing your code, data, and README
-2. RepliCheck runs your code in an isolated Docker container
+2. Green Light runs your code in an isolated Docker container
 3. It checks execution (does the code actually run?), outputs (do results match what the paper claims?), and journal compliance (README format, data citations, file structure)
 4. It returns a structured report with pass/fail per check and specific fix suggestions
 
@@ -34,7 +34,7 @@ Stata support is technically feasible via Docker (the AEA Data Editor has alread
 
 ## Why this and not something else
 
-- **MetricsAI / econometrics agents** — these help you *run* analysis. RepliCheck checks that analysis you've *already done* actually reproduces.
+- **MetricsAI / econometrics agents** — these help you *run* analysis. Green Light checks that analysis you've *already done* actually reproduces.
 - **Code Ocean / Posit Cloud** — generic compute environments. No journal-specific compliance logic, no AI fix suggestions, no econ-domain awareness.
 - **Manual submission** — the status quo. Slow, error-prone, and the data editor bottleneck is getting worse as journals tighten reproducibility requirements.
 
